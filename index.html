@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maître Monteillet Lisa – Avocate Marseille (13001) | Divorce, Famille, Droit Civil</title>
+<meta name="description" content="Maître Monteillet Lisa, avocate au Barreau de Marseille. Divorce, garde d'enfants, locataire/propriétaire, droit commercial, indemnisation, surendettement, contestation saisie.">
+<link rel="stylesheet" href="style.css">
+<style>
+.hero-bg { background-image: url('https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=1400&q=80&auto=format&fit=crop'); }
+
+.domaines-rapides { background: var(--sable); }
+.dom-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; margin-top: 3rem; }
+.dc { background: var(--blanc); padding: 2rem 1.8rem; text-decoration: none; color: inherit; display: flex; flex-direction: column; border-bottom: 3px solid transparent; transition: all .25s; }
+.dc:hover { border-bottom-color: var(--sauge); background: var(--bleu-dk); transform: translateY(-3px); }
+.dc:hover .ic-box { background: rgba(46,125,107,.2); }
+.dc:hover .ic-box svg { stroke: #7DCEA0; }
+.dc:hover .dc-t { color: var(--blanc); }
+.dc:hover .dc-d { color: rgba(255,255,255,.52); }
+.dc:hover .dc-l { color: var(--or-light); }
+.dc-t { font-family: var(--fd); font-size: 1.1rem; color: var(--bleu-dk); margin-bottom: .6rem; transition: color .25s; }
+.dc-d { font-size: .84rem; color: var(--doux); line-height: 1.7; flex: 1; margin-bottom: 1rem; transition: color .25s; }
+.dc-l { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--bleu); font-weight: 600; display: flex; align-items: center; gap: 5px; transition: color .25s; }
+.dc-l svg { width: 11px; height: 11px; stroke: currentColor; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5; }
+
+.apropos { background: var(--blanc); }
+.ap-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 5rem; align-items: center; }
+.ap-img-wrap { position: relative; }
+.ap-img { width: 100%; aspect-ratio: 3/4; background: linear-gradient(155deg,#d6eaf8,#aed6f1); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem; }
+.ap-img svg { opacity: .25; }
+.ap-img-note { font-style: italic; color: rgba(0,0,0,.3); font-size: .82rem; font-family: var(--fd); text-align: center; padding: 0 2rem; }
+.ap-line { position: absolute; top: 1.5rem; left: 1.5rem; right: -1.5rem; bottom: -1.5rem; border: 2px solid var(--bleu-light); z-index: -1; }
+.ap-badge { position: absolute; bottom: -1.5rem; right: -1.5rem; background: var(--sauge); padding: 1rem 1.5rem; text-align: center; }
+.ab-t { font-family: var(--fd); font-size: .82rem; color: var(--blanc); display: block; }
+.ab-s { font-size: .62rem; color: rgba(255,255,255,.7); text-transform: uppercase; letter-spacing: .12em; margin-top: 3px; display: block; }
+.ap-right blockquote { font-family: var(--fd); font-style: italic; font-size: 1.3rem; color: var(--bleu-dk); border-left: 3px solid var(--sauge); padding-left: 1.5rem; margin: 2rem 0; line-height: 1.6; }
+.ap-p { color: var(--doux); line-height: 1.88; margin-bottom: 1rem; font-size: .95rem; }
+.ap-vals { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; margin-top: 1.5rem; }
+.av { display: flex; align-items: flex-start; gap: 9px; }
+.av svg { width: 14px; height: 14px; stroke: var(--sauge); stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; margin-top: 4px; }
+.av span { font-size: .85rem; color: var(--texte); }
+
+.avis-sec { background: var(--sable); }
+.avis-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 3rem; flex-wrap: wrap; gap: 2rem; }
+.note-nb { font-family: var(--fd); font-size: 3rem; font-weight: 400; color: var(--bleu-dk); line-height: 1; }
+.stars { display: flex; gap: 3px; margin-top: 4px; }
+.av-src { font-size: .72rem; color: var(--doux); margin-top: 3px; }
+.avis-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.5rem; }
+.avc { background: var(--blanc); border-left: 4px solid var(--bleu-light); padding: 2rem; position: relative; transition: border-color .25s; }
+.avc:hover { border-left-color: var(--sauge); }
+.avc-meta { font-size: .72rem; color: var(--doux); margin-bottom: .8rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.avc-type { background: var(--bleu-light); color: var(--bleu); font-size: .65rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; padding: 2px 8px; }
+.avc-stars { display: flex; gap: 2px; }
+.av-txt { font-size: .88rem; color: var(--doux); line-height: 1.78; margin-bottom: 1rem; font-style: italic; }
+.av-au { font-weight: 600; font-size: .8rem; color: var(--bleu-dk); }
+
+@media(max-width:1040px){ .dom-grid{grid-template-columns:1fr 1fr;} .ap-grid{grid-template-columns:1fr;gap:3rem;} .ap-line{display:none;} .ap-badge{position:static;display:inline-block;margin-top:1rem;} .avis-grid{grid-template-columns:1fr;} .ap-vals{grid-template-columns:1fr;} }
+@media(max-width:640px){ .dom-grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo"><span class="logo-t">Maître Monteillet Lisa</span><span class="logo-s">Avocate — Marseille 13001</span></a>
+  <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav id="nav">
+    <a href="index.html"class='active'>Accueil</a>
+    <a href="domaines.html">Domaines</a>
+    <a href="cabinet.html">Cabinet</a>
+    <a href="honoraires.html">Honoraires</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:+33751507274" class="nav-tel"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg>07 51 50 72 74</a>
+    <a href="contact.html" class="nav-cta">Prendre rendez-vous</a>
+  </nav>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="hero-left">
+    <div class="hero-tag">
+      <svg viewBox="0 0 24 24" style="width:10px;height:10px;stroke:var(--or-light);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Barreau de Marseille — 13001
+    </div>
+    <h1>Vos droits défendus<br>avec <em>engagement</em><br>et rigueur.</h1>
+    <p class="hero-sub">Maître Monteillet Lisa, avocate au Barreau de Marseille, vous accompagne dans toutes vos démarches juridiques — divorce, famille, baux, droit commercial, indemnisation et surendettement.</p>
+    <div class="hero-btns">
+      <a href="contact.html" class="btn-sauge">Prendre rendez-vous <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="domaines.html" class="btn-blanc">Nos domaines <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="hero-domaines">
+      <span class="hero-dom-tag">Divorce & famille</span>
+      <span class="hero-dom-tag">Locataire / Propriétaire</span>
+      <span class="hero-dom-tag">Droit commercial</span>
+      <span class="hero-dom-tag">Indemnisation victimes</span>
+      <span class="hero-dom-tag">Consommation</span>
+      <span class="hero-dom-tag">Surendettement</span>
+      <span class="hero-dom-tag">Contestation saisie</span>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-bg"></div>
+    <div class="hero-right-overlay"></div>
+  </div>
+</section>
+
+<section class="domaines-rapides">
+  <p class="s-lbl">Expertises</p>
+  <h2 class="s-t">7 domaines,<br>une seule <em>avocate</em></h2>
+  <div class="dom-grid">
+    <a href="domaines.html#divorce" class="dc reveal">
+      <div class="ic-box"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+      <h3 class="dc-t">Divorce &amp; garde</h3>
+      <p class="dc-d">Divorce, séparation, garde d'enfants, pension alimentaire, prestation compensatoire.</p>
+      <span class="dc-l">En savoir plus <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2.5"/></svg></span>
+    </a>
+    <a href="domaines.html#locataire" class="dc reveal">
+      <div class="ic-box"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <h3 class="dc-t">Locataire / Propriétaire</h3>
+      <p class="dc-d">Baux d'habitation, expulsion, dépôt de garantie, charges, litiges entre propriétaire et locataire.</p>
+      <span class="dc-l">En savoir plus <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2.5"/></svg></span>
+    </a>
+    <a href="domaines.html#commercial" class="dc reveal">
+      <div class="ic-box"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+      <h3 class="dc-t">Droit commercial</h3>
+      <p class="dc-d">Litiges entre commerçants, baux commerciaux, recouvrement de créances, contrats professionnels.</p>
+      <span class="dc-l">En savoir plus <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2.5"/></svg></span>
+    </a>
+    <a href="domaines.html#victimes" class="dc reveal">
+      <div class="ic-box"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+      <h3 class="dc-t">Indemnisation victimes</h3>
+      <p class="dc-d">Accidents, préjudice corporel, moral et matériel. Défense et accompagnement des victimes.</p>
+      <span class="dc-l">En savoir plus <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2.5"/></svg></span>
+    </a>
+    <a href="domaines.html#conso" class="dc reveal">
+      <div class="ic-box"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></div>
+      <h3 class="dc-t">Droit de la consommation</h3>
+      <p class="dc-d">Clauses abusives, pratiques commerciales trompeuses, litiges avec professionnels.</p>
+      <span class="dc-l">En savoir plus <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2.5"/></svg></span>
+    </a>
+    <a href="domaines.html#surendettement" class="dc reveal">
+      <div class="ic-box"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+      <h3 class="dc-t">Surendettement bancaire</h3>
+      <p class="dc-d">Dossier de surendettement, contestation de dettes, négociation avec créanciers et banques.</p>
+      <span class="dc-l">En savoir plus <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2.5"/></svg></span>
+    </a>
+    <a href="domaines.html#saisie" class="dc reveal">
+      <div class="ic-box"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+      <h3 class="dc-t">Contestation saisie</h3>
+      <p class="dc-d">Saisie sur salaire, compte bancaire, huissier. Contestation et protection de vos biens.</p>
+      <span class="dc-l">En savoir plus <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2.5"/></svg></span>
+    </a>
+    <a href="contact.html" class="dc reveal" style="background:var(--sauge);border-bottom-color:var(--or);">
+      <div class="ic-box" style="background:rgba(255,255,255,.15)"><svg viewBox="0 0 24 24" style="stroke:#fff"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+      <h3 class="dc-t" style="color:#fff">Votre situation</h3>
+      <p class="dc-d" style="color:rgba(255,255,255,.65)">Chaque dossier est unique. Décrivez votre situation et Maître Monteillet vous répondra sous 24h.</p>
+      <span class="dc-l" style="color:var(--or-light)">Nous écrire <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2.5"/></svg></span>
+    </a>
+  </div>
+</section>
+
+<section class="apropos">
+  <div class="ap-grid">
+    <div class="ap-img-wrap">
+      <div class="ap-img">
+        <svg width="72" height="72" viewBox="0 0 24 24" fill="var(--bleu-md)"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+        <p class="ap-img-note">Photo de Maître Monteillet à venir</p>
+      </div>
+      <div class="ap-line"></div>
+      <div class="ap-badge"><span class="ab-t">Barreau de Marseille</span><span class="ab-s">Avocate généraliste</span></div>
+    </div>
+    <div class="reveal">
+      <p class="s-lbl">Le Cabinet</p>
+      <h2 class="s-t">Maître Monteillet<br><em>Lisa</em></h2>
+      <blockquote>"Mon rôle est d'être à vos côtés, de comprendre votre situation et de défendre vos droits avec toute la détermination qu'ils méritent."</blockquote>
+      <p class="ap-p">Inscrite au Barreau de Marseille, Maître Monteillet Lisa exerce en tant qu'avocate généraliste au cœur du 1er arrondissement, au 42 rue Sainte. Elle accompagne une clientèle diverse — particuliers, familles, locataires, commerçants — avec la même attention portée à chaque dossier.</p>
+      <p class="ap-p">Sa pratique couvre 7 domaines complémentaires : du droit de la famille au droit commercial, en passant par la défense des consommateurs, l'indemnisation des victimes et les situations de surendettement. Une approche globale, au service de personnes souvent en difficulté.</p>
+      <div class="ap-vals">
+        <div class="av"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline style='stroke:var(--sauge)' points="20 6 9 17 4 12"/></svg> <span>Écoute &amp; bienveillance</span></div>
+        <div class="av"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline style='stroke:var(--sauge)' points="20 6 9 17 4 12"/></svg> <span>Réponse sous 24h</span></div>
+        <div class="av"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline style='stroke:var(--sauge)' points="20 6 9 17 4 12"/></svg> <span>Secret professionnel absolu</span></div>
+        <div class="av"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline style='stroke:var(--sauge)' points="20 6 9 17 4 12"/></svg> <span>Honoraires transparents</span></div>
+        <div class="av"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline style='stroke:var(--sauge)' points="20 6 9 17 4 12"/></svg> <span>7 domaines d'intervention</span></div>
+        <div class="av"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline style='stroke:var(--sauge)' points="20 6 9 17 4 12"/></svg> <span>Défense des plus vulnérables</span></div>
+      </div>
+      <a href="cabinet.html" class="btn-bleu" style="margin-top:2rem">Découvrir le cabinet <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div>
+    <p class="cta-band-t">Un litige ? Une situation difficile ?<br><em>Parlons-en.</em></p>
+    <p class="cta-band-sub">42 rue Sainte, Marseille 13001 — Réponse garantie sous 24h</p>
+  </div>
+  <div class="cta-band-a">
+    <a href="tel:+33751507274" class="tel-big"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg>07 51 50 72 74</a>
+    <a href="contact.html" class="btn-blanc">Prendre rendez-vous <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+  </div>
+</div>
+
+<section class="avis-sec">
+  <div class="avis-head">
+    <div><p class="s-lbl">Témoignages vérifiés</p><h2 class="s-t">Ils nous font<br><em>confiance</em></h2></div>
+    <div><div class="note-nb">4.6 / 5</div><div class="stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star"/></svg></div><div class="av-src">Avis vérifiés — Avocat.fr</div></div>
+  </div>
+  <div class="avis-grid">
+    <div class="avc reveal">
+      <div class="avc-meta">
+        <div class="avc-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star-sm"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star-sm"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star-sm"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star-sm"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star-sm"/></svg></div>
+        <span style="font-weight:600;font-size:.72rem;color:var(--bleu-dk)">5/5</span>
+        <span class="avc-type">Divorce – Garde d'enfants</span>
+        <span>23/09/2025</span>
+      </div>
+      <p class="av-txt">Super efficace ! À l'écoute et très réactive. Je conseille fortement !!! Merci</p>
+      <div class="av-au">Thomas</div>
+    </div>
+    <div class="avc reveal">
+      <div class="avc-meta">
+        <div class="avc-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star-sm"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star-sm"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star-sm"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star-sm"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" class="star-empty"/></svg></div>
+        <span style="font-weight:600;font-size:.72rem;color:var(--bleu-dk)">4/5</span>
+        <span class="avc-type">État civil – Adoption – Filiation</span>
+        <span>24/06/2025</span>
+      </div>
+      <p class="av-txt">Contact rapide. De très bons conseils, qui connaît son sujet ! Affaire à suivre car ce n'est que le début.</p>
+      <div class="av-au">Beatrice</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand"><span class="logo-t">Maître Monteillet Lisa</span><span class="logo-s">Avocate — Barreau de Marseille</span><p>Avocate généraliste à Marseille, Maître Monteillet accompagne particuliers et professionnels dans tous leurs litiges civils, familiaux, commerciaux et de consommation.</p></div>
+    <div class="footer-col"><h4>Pages</h4><a href="index.html">Accueil</a><a href="domaines.html">Domaines</a><a href="cabinet.html">Cabinet</a><a href="honoraires.html">Honoraires</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Domaines</h4><a href="domaines.html#divorce">Divorce & famille</a><a href="domaines.html#locataire">Locataire / Propriétaire</a><a href="domaines.html#commercial">Droit commercial</a><a href="domaines.html#victimes">Indemnisation victimes</a><a href="domaines.html#conso">Consommation</a><a href="domaines.html#surendettement">Surendettement</a><a href="domaines.html#saisie">Contestation saisie</a></div>
+    <div class="footer-col"><h4>Contact</h4><p>42 rue Sainte<br>13001 Marseille</p><a href="tel:+33751507274">07 51 50 72 74</a><a href="mailto:contact@Monteiller-avocate.com">contact@Monteiller-avocate.com</a><p style="margin-top:.5rem">Lun–Ven : 9h–18h30</p></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 Maître Monteillet Lisa — Avocat au Barreau de Marseille</div>
+    <div class="footer-powered">Site réalisé par <a href="https://www.hidea-solution.fr" target="_blank" rel="noopener">Hidea Solution</a></div>
+    <div class="footer-legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">Cookies</a></div>
+  </div>
+</footer><script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Honoraires — Maître Monteillet Lisa, Avocate Marseille</title>
+<meta name="description" content="Honoraires de Maître Monteillet Lisa, avocate généraliste à Marseille. Convention d'honoraires systématique. Aide juridictionnelle acceptée.">
+<link rel="stylesheet" href="style.css">
+<style>
+.hon-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; margin-top: 3rem; }
+.hon-txt { color: var(--doux); line-height: 1.88; margin-bottom: 1.1rem; font-size: .95rem; }
+.hon-list { display: flex; flex-direction: column; gap: 1.5px; margin-top: 2rem; }
+.hon-item { background: var(--sable); padding: 1.3rem 1.8rem; display: flex; justify-content: space-between; align-items: center; border-left: 3px solid transparent; transition: border-color .2s; gap: 1rem; }
+.hon-item:hover { border-left-color: var(--sauge); }
+.hon-n { font-weight: 400; font-size: .92rem; }
+.hon-p { font-family: var(--fd); font-size: 1.05rem; color: var(--bleu-dk); font-weight: 400; white-space: nowrap; }
+.hon-note { font-size: .77rem; color: var(--doux); margin-top: .9rem; font-style: italic; line-height: 1.65; }
+.aj-block { background: var(--sauge); padding: 2rem; margin-top: 2rem; }
+.aj-t { font-family: var(--fd); font-size: 1.2rem; color: var(--blanc); margin-bottom: .8rem; }
+.aj-txt { font-size: .86rem; color: rgba(255,255,255,.7); line-height: 1.78; }
+.modes-g { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 3rem; }
+.mc { background: var(--blanc); padding: 2rem; border-top: 3px solid var(--bleu-light); transition: border-color .25s; }
+.mc:hover { border-top-color: var(--sauge); }
+.mc h3 { font-family: var(--fd); font-size: 1.1rem; color: var(--bleu-dk); margin: 1rem 0 .6rem; }
+.mc p { font-size: .84rem; color: var(--doux); line-height: 1.75; }
+@media(max-width:1040px){ .hon-grid{grid-template-columns:1fr;} .modes-g{grid-template-columns:1fr 1fr;} }
+@media(max-width:640px){ .modes-g{grid-template-columns:1fr;} }
+</style>
+</head><body>
+<header>
+  <a href="index.html" class="logo"><span class="logo-t">Maître Monteillet Lisa</span><span class="logo-s">Avocate — Marseille 13001</span></a>
+  <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav id="nav">
+    <a href="index.html">Accueil</a>
+    <a href="domaines.html" >Domaines</a>
+    <a href="cabinet.html" >Cabinet</a>
+    <a href="honoraires.html" class='active'>Honoraires</a>
+    <a href="contact.html" >Contact</a>
+    <a href="tel:+33751507274" class="nav-tel"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg>07 51 50 72 74</a>
+    <a href="contact.html" class="nav-cta">Prendre rendez-vous</a>
+  </nav>
+</header>
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Accueil</a><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg><span>Honoraires</span></div>
+  <p class="s-lbl">Tarification</p>
+  <h1 class="s-t">Nos <em>honoraires</em></h1>
+  <p>Maître Monteillet s'engage à une totale transparence sur ses honoraires. Tout est défini avant toute intervention, dans le cadre d'une convention signée ensemble.</p>
+</div>
+<section>
+  <div class="hon-grid">
+    <div class="reveal">
+      <p class="s-lbl">Principes</p>
+      <h2 class="s-t">Une tarification <em>juste</em><br>et transparente</h2>
+      <p class="hon-txt">Conformément à la loi, Maître Monteillet fixe ses honoraires en accord avec le client avant toute intervention, dans le cadre d'une convention d'honoraires écrite. Le montant tient compte de la nature du dossier, de sa complexité et du temps prévisible.</p>
+      <p class="hon-txt">L'accès au droit ne doit pas être réservé aux plus aisés. C'est pourquoi le cabinet accepte l'aide juridictionnelle pour permettre à tous de se défendre.</p>
+      <div class="aj-block">
+        <h3 class="aj-t">Aide juridictionnelle acceptée</h3>
+        <p class="aj-txt">Si vos ressources sont insuffisantes, l'État peut prendre en charge tout ou partie des honoraires d'avocat. Maître Monteillet accepte l'aide juridictionnelle. Le cabinet vous aide à constituer votre dossier.</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="s-lbl" style="margin-top:0">Tarifs indicatifs</p>
+      <div class="hon-list">
+        <div class="hon-item"><span class="hon-n">Premier entretien (analyse)</span><span class="hon-p">Sur devis</span></div>
+        <div class="hon-item"><span class="hon-n">Divorce amiable (consentement mutuel)</span><span class="hon-p">Sur devis</span></div>
+        <div class="hon-item"><span class="hon-n">Litige locatif</span><span class="hon-p">Sur devis</span></div>
+        <div class="hon-item"><span class="hon-n">Mise en demeure</span><span class="hon-p">Sur devis</span></div>
+        <div class="hon-item"><span class="hon-n">Recouvrement de créances</span><span class="hon-p">Sur devis</span></div>
+        <div class="hon-item"><span class="hon-n">Dossier surendettement</span><span class="hon-p">Sur devis</span></div>
+        <div class="hon-item"><span class="hon-n">Contestation saisie</span><span class="hon-p">Sur devis</span></div>
+        <div class="hon-item"><span class="hon-n">Aide juridictionnelle</span><span class="hon-p">Acceptée</span></div>
+      </div>
+      <p class="hon-note">* Une convention d'honoraires est remise avant toute intervention. Les tarifs sont établis en fonction de la complexité du dossier. L'aide juridictionnelle est acceptée sous conditions de ressources.</p>
+    </div>
+  </div>
+</section>
+<section style="background:var(--sable)">
+  <p class="s-lbl">Modalités</p>
+  <h2 class="s-t">Comment sont fixés<br>les <em>honoraires</em> ?</h2>
+  <div class="modes-g">
+    <div class="mc reveal"><div class="ic-box"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3>Forfait</h3><p>Pour les dossiers simples à périmètre défini : divorce amiable, rédaction de mise en demeure, contestation simple. Prix fixe, sans surprise.</p></div>
+    <div class="mc reveal"><div class="ic-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3>Temps passé</h3><p>Pour les procédures complexes ou multi-audiences. Taux horaire convenu à l'avance, relevé de temps communiqué régulièrement.</p></div>
+    <div class="mc reveal"><div class="ic-box"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Aide juridictionnelle</h3><p>Pour les personnes aux revenus modestes, l'État prend en charge les honoraires. Maître Monteillet accepte l'AJ et vous aide dans les démarches.</p></div>
+  </div>
+</section>
+<div class="cta-band">
+  <div><p class="cta-band-t">Une question ?<br>Une situation urgente ? <em>Appelez.</em></p><p class="cta-band-sub">Réponse sous 24h — 42 rue Sainte, Marseille 13001</p></div>
+  <div class="cta-band-a"><a href="tel:+33751507274" class="tel-big"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg>07 51 50 72 74</a><a href="contact.html" class="btn-blanc">Prendre rendez-vous <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand"><span class="logo-t">Maître Monteillet Lisa</span><span class="logo-s">Avocate — Barreau de Marseille</span><p>Avocate généraliste à Marseille, spécialisée en droit de la famille, baux, droit commercial, consommation, indemnisation et surendettement.</p></div>
+    <div class="footer-col"><h4>Pages</h4><a href="index.html">Accueil</a><a href="domaines.html">Domaines</a><a href="cabinet.html">Cabinet</a><a href="honoraires.html">Honoraires</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Domaines</h4><a href="domaines.html#divorce">Divorce & famille</a><a href="domaines.html#locataire">Locataire/Propriétaire</a><a href="domaines.html#commercial">Droit commercial</a><a href="domaines.html#victimes">Victimes</a><a href="domaines.html#conso">Consommation</a><a href="domaines.html#surendettement">Surendettement</a><a href="domaines.html#saisie">Contestation saisie</a></div>
+    <div class="footer-col"><h4>Contact</h4><p>42 rue Sainte<br>13001 Marseille</p><a href="tel:+33751507274">07 51 50 72 74</a><a href="mailto:contact@Monteiller-avocate.com">contact@Monteiller-avocate.com</a></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 Maître Monteillet Lisa — Avocat au Barreau de Marseille</div>
+    <div class="footer-powered">Site réalisé par <a href="https://www.hidea-solution.fr" target="_blank" rel="noopener">Hidea Solution</a></div>
+    <div class="footer-legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">Cookies</a></div>
+  </div>
+</footer><script src="main.js"></script>
+</body></html>

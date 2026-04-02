@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Maître Monteillet Lisa, Avocate 42 rue Sainte Marseille</title>
+<meta name="description" content="Contactez Maître Monteillet Lisa, avocate au 42 rue Sainte, 13001 Marseille. Tél: 07 51 50 72 74. Réponse sous 24h.">
+<link rel="stylesheet" href="style.css">
+<style>
+.ct-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; margin-top: 3rem; }
+.ci { display: flex; gap: 1rem; margin-bottom: 2rem; align-items: flex-start; }
+.ci-ic { width: 44px; height: 44px; flex-shrink: 0; background: var(--bleu-light); display: flex; align-items: center; justify-content: center; }
+.ci-ic svg { width: 18px; height: 18px; stroke: var(--bleu); stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.ci-l { font-size: .67rem; text-transform: uppercase; letter-spacing: .16em; color: var(--sauge); margin-bottom: 3px; }
+.ci-v { font-size: .93rem; color: var(--texte); }
+.ci-v a { color: var(--bleu-md); text-decoration: none; font-weight: 600; }
+.ci-v a:hover { color: var(--sauge); }
+.hrs { border-top: 1px solid var(--bordure); padding-top: 1.5rem; margin-top: 1.5rem; }
+.hr-t { font-size: .67rem; text-transform: uppercase; letter-spacing: .16em; color: var(--sauge); margin-bottom: .9rem; }
+.hr-l { display: flex; justify-content: space-between; font-size: .84rem; color: var(--doux); padding: .4rem 0; border-bottom: 1px solid var(--bordure); }
+.aj-note { background: var(--sauge-light); border-left: 3px solid var(--sauge); padding: 1rem 1.3rem; margin-top: 1.5rem; font-size: .84rem; color: var(--texte); line-height: 1.7; }
+.cf { display: flex; flex-direction: column; gap: 1.2rem; }
+.f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.fg { display: flex; flex-direction: column; gap: .4rem; }
+.fl { font-size: .67rem; text-transform: uppercase; letter-spacing: .13em; color: var(--doux); }
+.fi, .fs, .ft { background: var(--sable); border: 1px solid var(--bordure); color: var(--texte); padding: 12px 15px; font-family: var(--fb); font-size: .9rem; outline: none; transition: border-color .2s; width: 100%; appearance: none; }
+.fi::placeholder, .ft::placeholder { color: rgba(0,0,0,.28); }
+.fi:focus, .fs:focus, .ft:focus { border-color: var(--sauge); box-shadow: 0 0 0 3px rgba(46,125,107,.08); }
+.ft { resize: vertical; min-height: 130px; }
+.f-rgpd { display: flex; align-items: flex-start; gap: 10px; font-size: .77rem; color: var(--doux); line-height: 1.65; }
+.f-rgpd input { margin-top: 3px; flex-shrink: 0; accent-color: var(--sauge); }
+.btn-submit { background: var(--sauge); color: var(--blanc); border: none; padding: 14px 30px; font-family: var(--fb); font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; align-self: flex-start; display: flex; align-items: center; gap: 8px; transition: background .2s, transform .2s; }
+.btn-submit svg { width: 14px; height: 14px; stroke: var(--blanc); fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
+.btn-submit:hover { background: #235f52; transform: translateY(-1px); }
+#form-success { display: none; color: var(--sauge); font-size: .9rem; font-style: italic; margin-top: .5rem; padding: .8rem 1rem; background: var(--sauge-light); border-left: 3px solid var(--sauge); }
+@media(max-width:1040px){ .ct-grid{grid-template-columns:1fr;} .f-row{grid-template-columns:1fr;} }
+</style>
+</head><body>
+<header>
+  <a href="index.html" class="logo"><span class="logo-t">Maître Monteillet Lisa</span><span class="logo-s">Avocate — Marseille 13001</span></a>
+  <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav id="nav">
+    <a href="index.html">Accueil</a>
+    <a href="domaines.html" >Domaines</a>
+    <a href="cabinet.html" >Cabinet</a>
+    <a href="honoraires.html" >Honoraires</a>
+    <a href="contact.html" class='active'>Contact</a>
+    <a href="tel:+33751507274" class="nav-tel"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg>07 51 50 72 74</a>
+    <a href="contact.html" class="nav-cta">Prendre rendez-vous</a>
+  </nav>
+</header>
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Accueil</a><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg><span>Contact</span></div>
+  <p class="s-lbl">Prenons contact</p>
+  <h1 class="s-t">Décrivez votre<br><em>situation</em></h1>
+  <p>Maître Monteillet vous répondra dans les 24 heures. Tous les échanges sont couverts par le secret professionnel.</p>
+</div>
+<section>
+  <div class="ct-grid">
+    <div class="reveal">
+      <p class="s-lbl">Coordonnées</p>
+      <h2 class="s-t" style="font-size:1.8rem">Cabinet<br><em>Monteillet</em></h2>
+      <div class="ci"><div class="ci-ic"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ci-l">Adresse</div><div class="ci-v">42 rue Sainte<br>13001 Marseille</div></div></div>
+      <div class="ci"><div class="ci-ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg></div><div><div class="ci-l">Téléphone</div><div class="ci-v"><a href="tel:+33751507274">07 51 50 72 74</a></div></div></div>
+      <div class="ci"><div class="ci-ic"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="ci-l">Email</div><div class="ci-v"><a href="mailto:contact@Monteiller-avocate.com">contact@Monteiller-avocate.com</a></div></div></div>
+      <div class="hrs">
+        <div class="hr-t">Horaires</div>
+        <div class="hr-l"><span>Lundi – Vendredi</span><span>9h – 12h30 / 14h – 18h30</span></div>
+        <div class="hr-l"><span>Samedi</span><span>Sur rendez-vous</span></div>
+        <div class="hr-l"><span>Dimanche</span><span>Fermé</span></div>
+      </div>
+      <div class="aj-note"><strong>Aide juridictionnelle acceptée.</strong> Si vos ressources sont limitées, vous pouvez bénéficier d'une prise en charge par l'État. Le cabinet vous aide dans les démarches.</div>
+    </div>
+    <form class="cf reveal" id="form-contact" novalidate>
+      <p class="s-lbl">Formulaire de contact</p>
+      <div class="f-row">
+        <div class="fg"><label class="fl" for="prenom">Prénom *</label><input class="fi" type="text" id="prenom" placeholder="Marie" required></div>
+        <div class="fg"><label class="fl" for="nom">Nom *</label><input class="fi" type="text" id="nom" placeholder="Dupont" required></div>
+      </div>
+      <div class="f-row">
+        <div class="fg"><label class="fl" for="email">Email *</label><input class="fi" type="email" id="email" placeholder="vous@email.fr" required></div>
+        <div class="fg"><label class="fl" for="tel">Téléphone</label><input class="fi" type="tel" id="tel" placeholder="06 XX XX XX XX"></div>
+      </div>
+      <div class="fg">
+        <label class="fl" for="domaine">Votre situation *</label>
+        <select class="fs" id="domaine" required>
+          <option value="" disabled selected>Choisissez un domaine</option>
+          <option>Divorce – Garde d'enfants</option>
+          <option>Locataire / Propriétaire</option>
+          <option>Droit commercial</option>
+          <option>Indemnisation des victimes</option>
+          <option>Droit de la consommation</option>
+          <option>Surendettement – Droit bancaire</option>
+          <option>Contestation saisie – Huissier</option>
+          <option>Autre situation</option>
+        </select>
+      </div>
+      <div class="fg"><label class="fl" for="message">Décrivez votre situation *</label><textarea class="ft" id="message" placeholder="En quelques lignes, décrivez votre situation..." required></textarea></div>
+      <label class="f-rgpd"><input type="checkbox" id="rgpd" required>J'accepte que ces informations soient traitées dans le cadre de ma demande de consultation, conformément à la politique de confidentialité du cabinet. Les échanges sont couverts par le secret professionnel.</label>
+      <button type="submit" class="btn-submit">Envoyer ma demande <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div id="form-success">Votre message a bien été envoyé. Maître Monteillet vous répondra dans les 24h.</div>
+    </form>
+  </div>
+</section>
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand"><span class="logo-t">Maître Monteillet Lisa</span><span class="logo-s">Avocate — Barreau de Marseille</span><p>Avocate généraliste à Marseille, spécialisée en droit de la famille, baux, droit commercial, consommation, indemnisation et surendettement.</p></div>
+    <div class="footer-col"><h4>Pages</h4><a href="index.html">Accueil</a><a href="domaines.html">Domaines</a><a href="cabinet.html">Cabinet</a><a href="honoraires.html">Honoraires</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Domaines</h4><a href="domaines.html#divorce">Divorce & famille</a><a href="domaines.html#locataire">Locataire/Propriétaire</a><a href="domaines.html#commercial">Droit commercial</a><a href="domaines.html#victimes">Victimes</a><a href="domaines.html#conso">Consommation</a><a href="domaines.html#surendettement">Surendettement</a><a href="domaines.html#saisie">Contestation saisie</a></div>
+    <div class="footer-col"><h4>Contact</h4><p>42 rue Sainte<br>13001 Marseille</p><a href="tel:+33751507274">07 51 50 72 74</a><a href="mailto:contact@Monteiller-avocate.com">contact@Monteiller-avocate.com</a></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 Maître Monteillet Lisa — Avocat au Barreau de Marseille</div>
+    <div class="footer-powered">Site réalisé par <a href="https://www.hidea-solution.fr" target="_blank" rel="noopener">Hidea Solution</a></div>
+    <div class="footer-legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">Cookies</a></div>
+  </div>
+</footer><script src="main.js"></script>
+</body></html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Cabinet — Maître Monteillet Lisa, Avocate Marseille 13001</title>
+<meta name="description" content="Maître Monteillet Lisa, avocate généraliste inscrite au Barreau de Marseille. Cabinet au 42 rue Sainte, 13001 Marseille.">
+<link rel="stylesheet" href="style.css">
+<style>
+.cab-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 6rem; align-items: start; }
+.cab-frame { position: relative; }
+.cab-img { width: 100%; aspect-ratio: 3/4; background: linear-gradient(155deg,var(--bleu-light),#aed6f1); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem; }
+.cab-img svg { opacity: .25; }
+.cab-img-note { font-style: italic; color: rgba(0,0,0,.3); font-size: .82rem; font-family: var(--fd); text-align: center; padding: 0 2rem; }
+.cab-line { position: absolute; top: 1.5rem; left: 1.5rem; right: -1.5rem; bottom: -1.5rem; border: 2px solid var(--bleu-light); z-index: -1; }
+.cab-badge { position: absolute; bottom: -1.5rem; right: -1.5rem; background: var(--sauge); padding: 1rem 1.5rem; text-align: center; }
+.ab-t { font-family: var(--fd); font-size: .82rem; color: var(--blanc); display: block; }
+.ab-s { font-size: .62rem; color: rgba(255,255,255,.7); text-transform: uppercase; letter-spacing: .12em; margin-top: 3px; display: block; }
+.cab-right blockquote { font-family: var(--fd); font-style: italic; font-size: 1.3rem; color: var(--bleu-dk); border-left: 3px solid var(--sauge); padding-left: 1.5rem; margin: 2rem 0; line-height: 1.6; }
+.cab-p { color: var(--doux); line-height: 1.88; margin-bottom: 1rem; font-size: .95rem; }
+.cab-vals { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; margin-top: 1.5rem; }
+.cv { display: flex; align-items: flex-start; gap: 9px; }
+.cv svg { width: 14px; height: 14px; stroke: var(--sauge); stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; margin-top: 4px; }
+.cv span { font-size: .85rem; color: var(--texte); }
+.valeursbloc { background: var(--sable); }
+.valeurs-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 3rem; }
+.val-card { background: var(--blanc); padding: 2rem; border-top: 3px solid var(--bleu-light); transition: border-color .25s; }
+.val-card:hover { border-top-color: var(--sauge); }
+.val-card h3 { font-family: var(--fd); font-size: 1.15rem; color: var(--bleu-dk); margin: 1rem 0 .6rem; }
+.val-card p { font-size: .84rem; color: var(--doux); line-height: 1.75; }
+@media(max-width:1040px){ .cab-grid{grid-template-columns:1fr;gap:3rem;} .cab-line{display:none;} .cab-badge{position:static;display:inline-block;margin-top:1rem;} .valeurs-grid{grid-template-columns:1fr 1fr;} .cab-vals{grid-template-columns:1fr;} }
+@media(max-width:640px){ .valeurs-grid{grid-template-columns:1fr;} }
+</style>
+</head><body>
+<header>
+  <a href="index.html" class="logo"><span class="logo-t">Maître Monteillet Lisa</span><span class="logo-s">Avocate — Marseille 13001</span></a>
+  <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav id="nav">
+    <a href="index.html">Accueil</a>
+    <a href="domaines.html" >Domaines</a>
+    <a href="cabinet.html" class='active'>Cabinet</a>
+    <a href="honoraires.html" >Honoraires</a>
+    <a href="contact.html" >Contact</a>
+    <a href="tel:+33751507274" class="nav-tel"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg>07 51 50 72 74</a>
+    <a href="contact.html" class="nav-cta">Prendre rendez-vous</a>
+  </nav>
+</header>
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Accueil</a><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg><span>Cabinet</span></div>
+  <p class="s-lbl">À propos</p>
+  <h1 class="s-t">Le <em>Cabinet</em></h1>
+  <p>Un cabinet à taille humaine au cœur du 1er arrondissement de Marseille, dédié à la défense des particuliers et des professionnels.</p>
+</div>
+<section>
+  <div class="cab-grid">
+    <div class="cab-frame">
+      <div class="cab-img">
+        <svg width="72" height="72" viewBox="0 0 24 24" fill="var(--bleu-md)"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+        <p class="cab-img-note">Photo de Maître Monteillet à venir</p>
+      </div>
+      <div class="cab-line"></div>
+      <div class="cab-badge"><span class="ab-t">Barreau de Marseille</span><span class="ab-s">Avocate généraliste</span></div>
+    </div>
+    <div class="reveal">
+      <p class="s-lbl">Maître Monteillet Lisa</p>
+      <h2 class="s-t">Avocate <em>généraliste</em><br>à Marseille</h2>
+      <blockquote>"Mon engagement : être présente, comprendre votre situation dans sa globalité et vous défendre avec toute l'énergie nécessaire."</blockquote>
+      <p class="cab-p">Inscrite au Barreau de Marseille, Maître Monteillet Lisa exerce en tant qu'avocate généraliste au 42 rue Sainte, dans le 1er arrondissement de Marseille. Son cabinet accueille des clients aux profils très variés : familles en difficulté, locataires lésés, commerçants en litige, victimes d'accidents ou de pratiques abusives.</p>
+      <p class="cab-p">Cette diversité de clientèle est une richesse : elle permet une vision globale du droit et une capacité à traiter des situations complexes faisant intervenir plusieurs branches juridiques simultanément. Maître Monteillet aime les dossiers humains, ceux qui touchent à la vie réelle des gens.</p>
+      <p class="cab-p">Sa méthode : écouter d'abord, analyser ensuite, puis agir avec détermination. La négociation amiable est toujours privilégiée, la voie judiciaire engagée quand elle est nécessaire.</p>
+      <div class="cab-vals">
+        <div class="cv"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Écoute active et bienveillance</span></div>
+        <div class="cv"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Réponse garantie sous 24h</span></div>
+        <div class="cv"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>7 domaines d'intervention</span></div>
+        <div class="cv"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Secret professionnel absolu</span></div>
+        <div class="cv"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Honoraires transparents</span></div>
+        <div class="cv"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Intervention PACA & national</span></div>
+      </div>
+      <a href="contact.html" class="btn-sauge" style="margin-top:2rem">Prendre rendez-vous <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+<section class="valeursbloc">
+  <p class="s-lbl">Notre approche</p>
+  <h2 class="s-t">Ce qui nous <em>distingue</em></h2>
+  <div class="valeurs-grid">
+    <div class="val-card reveal"><div class="ic-box"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><h3>L'humain avant tout</h3><p>Maître Monteillet prend le temps de comprendre votre situation dans sa globalité, pas seulement ses aspects juridiques.</p></div>
+    <div class="val-card reveal"><div class="ic-box"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg></div><h3>Disponibilité réelle</h3><p>Vous avez une question, une urgence ? Le cabinet répond sous 24h et s'adapte à vos contraintes horaires.</p></div>
+    <div class="val-card reveal"><div class="ic-box"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 010 7H6"/></svg></div><h3>Transparence totale</h3><p>Les honoraires sont discutés et fixés avant toute intervention. Aucune surprise sur la facture finale.</p></div>
+  </div>
+</section>
+<div class="cta-band">
+  <div><p class="cta-band-t">Une question ?<br>Une situation urgente ? <em>Appelez.</em></p><p class="cta-band-sub">Réponse sous 24h — 42 rue Sainte, Marseille 13001</p></div>
+  <div class="cta-band-a"><a href="tel:+33751507274" class="tel-big"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg>07 51 50 72 74</a><a href="contact.html" class="btn-blanc">Prendre rendez-vous <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand"><span class="logo-t">Maître Monteillet Lisa</span><span class="logo-s">Avocate — Barreau de Marseille</span><p>Avocate généraliste à Marseille, spécialisée en droit de la famille, baux, droit commercial, consommation, indemnisation et surendettement.</p></div>
+    <div class="footer-col"><h4>Pages</h4><a href="index.html">Accueil</a><a href="domaines.html">Domaines</a><a href="cabinet.html">Cabinet</a><a href="honoraires.html">Honoraires</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Domaines</h4><a href="domaines.html#divorce">Divorce & famille</a><a href="domaines.html#locataire">Locataire/Propriétaire</a><a href="domaines.html#commercial">Droit commercial</a><a href="domaines.html#victimes">Victimes</a><a href="domaines.html#conso">Consommation</a><a href="domaines.html#surendettement">Surendettement</a><a href="domaines.html#saisie">Contestation saisie</a></div>
+    <div class="footer-col"><h4>Contact</h4><p>42 rue Sainte<br>13001 Marseille</p><a href="tel:+33751507274">07 51 50 72 74</a><a href="mailto:contact@Monteiller-avocate.com">contact@Monteiller-avocate.com</a></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 Maître Monteillet Lisa — Avocat au Barreau de Marseille</div>
+    <div class="footer-powered">Site réalisé par <a href="https://www.hidea-solution.fr" target="_blank" rel="noopener">Hidea Solution</a></div>
+    <div class="footer-legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">Cookies</a></div>
+  </div>
+</footer><script src="main.js"></script>
+</body></html>
