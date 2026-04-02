@@ -132,9 +132,10 @@ footer { background: var(--bleu-dk); padding: 3rem 8% 2rem; }
   .burger { display: flex; }
   nav { display: none; position: absolute; top: 76px; left: 0; right: 0; background: var(--bleu-dk); flex-direction: column; padding: 1.5rem 6%; gap: 1.2rem; border-top: 1px solid rgba(255,255,255,.08); z-index: 9999; box-shadow: 0 8px 24px rgba(15,45,66,.35); }
   nav.open { display: flex; }
-  .hero { grid-template-columns: 1fr; }
-  .hero-right { display: none; }
-  .hero-left { padding: 4rem 5%; }
+  .hero { grid-template-columns: 1fr; position: relative; }
+  .hero-right { position: absolute; inset: 0; display: block; z-index: 0; }
+  .hero-left { padding: 4rem 5%; position: relative; z-index: 2; background: transparent; }
+  .hero-left::before { content: ''; position: absolute; inset: 0; background: rgba(15,45,66,.78); z-index: -1; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
   section { padding: 4rem 5%; }
   .page-hero { padding: 4rem 5%; }
